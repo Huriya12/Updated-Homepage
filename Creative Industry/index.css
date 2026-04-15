@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', 'Pacifico', cursive;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('assets/fonts/FontsFree-Net-Merengue-Script-W00-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background: #f7f1ed;
+    color: #333;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(200, 200, 200, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    z-index: 10;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-left {
+    gap: 260px;
+}
+
+.navbar-right {
+    gap: 190px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    padding: 10px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.herosection {
+    position: relative;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-bgimg {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/images/Vita Bella Image.png')center/cover no-repeat;
+    z-index: -2;
+}
+
+.herosection h1{
+    position: relative;
+    display: inline-block;
+    font-size: 85px;
+    font-family: 'MyFont', cursive;
+    max-width: 500px;
+    letter-spacing: 0%;
+    margin: auto;
+    padding-bottom: 30px;
+    line-height: 100%;
+}
+
+.small-text {
+    font-size: 75px;
+    font-family: 'MyFont', cursive;
+    max-width: 500px;
+    letter-spacing: 0%;
+    margin: auto;
+}
+
+.white-leaf-icon {
+    position: absolute;
+    top: -40px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+}
+
+.herosection p{
+    font-size: 34px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    max-width: 400px;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.favorites {
+    padding: 60px 20px;
+    text-align: center;
+    background: #efe6e1;
+}
+
+.favorites h2 {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 55px;
+    margin-bottom: 10px;
+    letter-spacing: 6%;
+    color: #271D15;
+    margin-bottom: 30px;
+}
+
+.favorites p {
+    font-size: 24px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #271D15;
+}
